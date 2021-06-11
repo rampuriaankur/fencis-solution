@@ -41,7 +41,6 @@ public class CityLinkBuilder {
         } catch (IOException e) {
             Response.getResponse(e.getMessage(), 1);
         }
-        System.out.println(dataMap);
         checkNodesExist(dataMap);
         return dataMap;
     }

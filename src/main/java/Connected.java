@@ -39,7 +39,6 @@ public class Connected {
             CityLinkBuilder connectionBuilder = new CityLinkBuilder(
                     fileBufferReader, startCity, endCity);
             ConcurrentHashMap<String, City> dataMap = connectionBuilder.createLinkBuilder();
-            System.out.println(dataMap);
             // Search for the desired connection
             CityLinkFinder connectionFinder = new CityLinkFinder(startCity,
                     endCity, dataMap);
