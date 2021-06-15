@@ -1,7 +1,7 @@
-package com.ank.fencis.service;
+package com.ank.fenics.service;
 
-import com.ank.fencis.beans.City;
-import com.ank.fencis.util.Response;
+import com.ank.fenics.beans.City;
+import com.ank.fenics.util.Response;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static com.ank.fencis.util.Constants.DELIMITER;
+import static com.ank.fenics.util.Constants.DELIMITER;
 
 public class CityLinkBuilder {
 
@@ -48,6 +48,7 @@ public class CityLinkBuilder {
     public ConcurrentHashMap<String, City> createLinkBuilder() {
         return processLinkingBetweenCities();
     }
+
     protected void createLink(final Map<String, City> dataMap,
                               String[] connectedCities) {
         // This is to confirm that we has two cities, Just in case file

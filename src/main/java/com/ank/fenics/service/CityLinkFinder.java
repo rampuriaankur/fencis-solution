@@ -1,7 +1,7 @@
-package com.ank.fencis.service;
+package com.ank.fenics.service;
 
-import com.ank.fencis.beans.City;
-import com.ank.fencis.util.Response;
+import com.ank.fenics.beans.City;
+import com.ank.fenics.util.Response;
 
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -13,7 +13,7 @@ public class CityLinkFinder {
 
 
     public CityLinkFinder(final String startPoint, final String endPoint,
-                            final ConcurrentHashMap<String, City> dataMap) {
+                          final ConcurrentHashMap<String, City> dataMap) {
         this.startPoint = startPoint.toLowerCase();
         this.endPoint = endPoint.toLowerCase();
         this.dataMap = dataMap;
@@ -22,7 +22,7 @@ public class CityLinkFinder {
     /**
      * Checks if there is a connection between provided starting point and end
      * point.
-     * */
+     */
     public void checkConnection() {
         if (isConnected()) {
             Response.yes();
@@ -33,7 +33,7 @@ public class CityLinkFinder {
 
     /**
      * @return false if there is no connection between provided cities.
-     * */
+     */
     protected boolean isConnected() {
         City startCity = dataMap.get(startPoint);
         search(startCity);
@@ -43,9 +43,8 @@ public class CityLinkFinder {
     /**
      * Used to search for connection.
      *
-     * @param currentNode
-     *            to check.
-     * */
+     * @param currentNode to check.
+     */
     protected void search(City currentNode) {
         if (currentNode.getName().equals(endPoint)) {
             Response.yes();
@@ -65,8 +64,7 @@ public class CityLinkFinder {
 
     /**
      * Used to remove connections with visited node to prevent circular path
-     *
-     * */
+     */
     protected void cleanNodes(City A) {
         for (City city : A.getLink().values()) {
             city.getLink().remove(A.getName());

@@ -8,11 +8,13 @@ class ConnectedTest {
         String[] args = {""};
         assertTrue(!Connected.validateArgs(args));
     }
+
     @Test
     public void TestValidateArgsNoFileName() {
         String[] args = {"  ", "Delhi", "Pune"};
         assertTrue(!Connected.validateArgs(args));
     }
+
     @Test
     public void TestValidateArgsInvalidCityName() {
         String[] args = {"rrs", " ", " "};

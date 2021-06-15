@@ -1,4 +1,4 @@
-package com.ank.fencis.util;
+package com.ank.fenics.util;
 
 public interface Constants {
     String FILE_NOT_FOUND = "file not found.";

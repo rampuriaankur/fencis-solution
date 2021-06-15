@@ -1,8 +1,8 @@
-import com.ank.fencis.beans.City;
-import com.ank.fencis.service.CityLinkBuilder;
-import com.ank.fencis.service.CityLinkFinder;
-import com.ank.fencis.service.CustomFileLoader;
-import com.ank.fencis.util.Response;
+import com.ank.fenics.beans.City;
+import com.ank.fenics.service.CityLinkBuilder;
+import com.ank.fenics.service.CityLinkFinder;
+import com.ank.fenics.service.CustomFileLoader;
+import com.ank.fenics.util.Response;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedReader;

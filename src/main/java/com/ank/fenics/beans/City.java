@@ -1,4 +1,4 @@
-package com.ank.fencis.beans;
+package com.ank.fenics.beans;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -13,6 +13,7 @@ public class City {
         this.visited = false;
         link = new ConcurrentHashMap<String, City>();
     }
+
     public String getName() {
         return name;
     }
@@ -24,6 +25,7 @@ public class City {
     public boolean isVisited() {
         return visited;
     }
+
     public void visited() {
         this.visited = true;
     }
@@ -35,12 +37,14 @@ public class City {
     public Map<String, City> getLink() {
         return link;
     }
+
     public boolean hasLinkWith(final String cityName) {
         if (link != null && !link.isEmpty()) {
             return link.containsKey(cityName);
         }
         return false;
     }
+
     public void addLink(final String cityName, final City cityLink) {
         this.link.put(cityName, cityLink);
     }
@@ -63,7 +67,7 @@ public class City {
 
     @Override
     public String toString() {
-        return "City{" + name +"}";
+        return "City{" + name + "}";
 
     }
 }

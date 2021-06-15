@@ -1,13 +1,12 @@
-package com.ank.fencis.service;
+package com.ank.fenics.service;
 
-import com.ank.fencis.beans.City;
-import com.ank.fencis.util.Constants;
+import com.ank.fenics.beans.City;
 import org.junit.Test;
 
 import java.io.BufferedReader;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 public class CityLinkBuilderTest {
 

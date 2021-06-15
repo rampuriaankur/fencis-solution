@@ -1,7 +1,7 @@
-package com.ank.fencis.service;
+package com.ank.fenics.service;
 
-import com.ank.fencis.util.Constants;
-import com.ank.fencis.util.Response;
+import com.ank.fenics.util.Constants;
+import com.ank.fenics.util.Response;
 
 import java.io.*;
 import java.nio.MappedByteBuffer;
